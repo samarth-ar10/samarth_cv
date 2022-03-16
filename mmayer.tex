@@ -1,0 +1,96 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+  \usepackage{hyperref}
+\fi
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{SAMARTH}
+\tagline{Computer Science Engineer}
+\photo{3cm}{samarth.jpg}
+\personalinfo{%
+  
+  \mailaddress{samarth.ar10@gmail.com / samarth.ar01@gmail.com}
+%  
+  \href{https://fenrir-so.tech}{\homepage{fenrir-so.tech}}
+%
+  \href{https://www.linkedin.com/in/samarth-nln-761785147/}{\linkedin{linkedin.com/in/samarth-nln-761785147/}}
+%  
+  \href{https://github.com/samarth-ar10}{\github{samarth-ar10}}
+%
+  \phone{+91 8800109608}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Software Intern}{Schneider Electric}{Sep 2019 – Nov 2019}{Tokyo, Japan}
+\begin{itemize}
+\item Introduced to Schneider Electric’s software environment including SoMachine and Machine Expert.
+\smallskip
+\item Logic building and programming PLCs including M251 and M262.
+\end{itemize}
+
+\divider
+
+\cvevent{Junior Robotics Engineer Intern}{Psygig Inc.}{Jun 2018 - Jul | Dec 2018}{Tokyo, Japan}
+\begin{itemize}
+\item Integrating communication pipeline between a path planner and a slam system for the company’s drone project. 
+\smallskip
+\item Successful integration of stm32 board as an intermediate between the local logger and cloud database.
+\end{itemize}
+
+%\divider
+
+\cvsection{Achievements}
+\smallskip
+\begin{itemize}
+\item Achieved 47km running target in a day for Nov,2019.
+\smallskip
+\item Covered 3km target in under 13min for relay marathon along with Schneider Electric team.
+\smallskip
+\item Completed 21.1km Manipal half marathon of 2018.
+\end{itemize}
+
+\cvsection{TECHNICAL SKILLS}
+\smallskip
+\begin{itemize}
+\item Autodesk Fusion360, EAGLE, Android Studio, VisualStudio, SoMachine, MachineExpert, Segger ES, Apache, MiniTools, MS Excel, Verilog, VBox, Hyper-V.
+\smallskip
+\item Arduino, Raspberry pi, STM32l4 board, M251, M262, ESP32.
+\smallskip
+\item C(main programming language), C++, Java, HTML, JavaScript, PHP, MySql, Bash, Python, Assembly, LaTeX.
+\linebreak
+\divider
+\item Experience in PCB designing, Web front-end and back-end designing, Linux, Socket Programming, 3d modelling, Local and Cloud VM management, Robotic System designing.
+\end{itemize}
+
+\cvsection{Education}
+\cvevent{B.Tech. in Computer Science and Engineering}{Manipal Institute of Technology, Manipal}{ 2015-2019}{}
+\cvevent{All India Senior School Certificate Examination}{Prince Public Senior Secondary School, New Delhi}{ 2015 }{}
+
+\clearpage
+
+\nocite{*}
+
+\end{document}
